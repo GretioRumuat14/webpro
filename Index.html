@@ -28,16 +28,16 @@
                 <div class="row">
                     <div class="columnLeft" style="padding-left: 15px;">
                         <h5>Add Student</h5>
-                        <button id="showForm" onclick="hideForm()" type="submit">Show Form Add New Student</button>
+                        <button id="showForm" onclick="hideForm()" type="submit">Add New Student</button>
                         <form style="display: none;" id="myForm" onsubmit="validateForm(), addStudents()" autocomplete="off">
                             <h6 id="textStudentId">Student ID (NIM)</h6>
-                            <input type="text" id="studentIdBox" style="margin-bottom: 15px; border-color: lightgray; padding: 3px; width: 95%; border-radius: 5px; border-width: 1px;"  placeholder="105011910027" required>
-                            <h6>Full Name</h6>
-                            <input type="text" id="studentNameBox" style="margin-bottom: 15px; border-color: lightgray; padding: 3px; width: 95%; border-radius: 5px; border-width: 1px;"  placeholder="Gretio Rumuat" required>
-                            <h6 style="padding-bottom: 7px;">Gender</h6>
-                            <input style="position: relative;float: left;" type="radio" name="radio" value="Male"><h6 style="position: relative; left: 10px;bottom: 4px;">Male</h6>
-                            <input style="position: relative;float: left;" type="radio" name="radio" value="Female"required><h6 style="position: relative; left: 10px;bottom: 4px;" >Female</h6>
-                            <h6 style="margin-top: 10px;">Faculty</h6>
+                            <input type="text" id="studentIdBox" style="margin-bottom: 15px; border-color: lightgray; padding: 3px; width: 95%; border-radius: 5px; border-width: 1px;"  placeholder="" required>
+                            <h6>Nama Lengkap</h6>
+                            <input type="text" id="studentNameBox" style="margin-bottom: 15px; border-color: lightgray; padding: 3px; width: 95%; border-radius: 5px; border-width: 1px;"  placeholder="" required>
+                            <h6 style="padding-bottom: 7px;">Jenis kelamin</h6>
+                            <input style="position: relative;float: left;" type="radio" name="radio" value="Male"><h6 style="position: relative; left: 10px;bottom: 4px;">Laki-Laki</h6>
+                            <input style="position: relative;float: left;" type="radio" name="radio" value="Female"required><h6 style="position: relative; left: 10px;bottom: 4px;" >Perempuan</h6>
+                            <h6 style="margin-top: 10px;">Fakultas</h6>
                             <select id="facultyDropdownForm" onchange="changeListForm(this.value)" style="margin-bottom: 10px;width: 95%; border-radius: 5px; padding: 3px; border-color: lightgray;" name="facultyForm" required>
                                 <option value="" disabled selected></option>
                                 <option value="Akademi Sekretari Manajemen Indonesia Klabat">Akademi Sekretari Manajemen Indonesia Klabat</option>
@@ -118,7 +118,7 @@
                         <td>Laki-Laki</td>
                         <td>Fakultas Ilmu Komputer</td>
                         <td>Sistem Informasi</td>
-                        <td><button id="rowDelete" class="deleteButton" value="delete" onclick="deleteRowFunction(this)"><i class="fas fa-user-minus"></i></button></td>
+                        
                     </tr>
                 </table>
                 </div>
